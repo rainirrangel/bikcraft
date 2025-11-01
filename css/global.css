@@ -1,6 +1,6 @@
 :root {
   /* Cores */
-  --w: #ffffff;
+  --c0: #ffffff;
   --c1: #f7f7f7;
   --c2: #ededed;
   --c3: #dedede;
@@ -31,6 +31,7 @@
   box-sizing: border-box;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
+  color: var(--c11);
 }
 
 a {
@@ -40,6 +41,8 @@ a {
 
 span {
   font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 ul,
@@ -51,12 +54,16 @@ img {
   max-width: 100%;
   display: block;
   object-fit: cover;
+}
+
+img[src$=".jpg"] {
   border-radius: 4px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 .grid-2c {
@@ -65,26 +72,27 @@ img {
   gap: 40px;
 }
 
-.pop-600 {
+.font1-600 {
   font-weight: 600;
 }
 
-.rob-400 {
+.font2-400 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
-.rob-500 {
+.font2-500 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
-.merri-900 {
+.font3-900 {
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-style: italic;
 }
-.font-p1 {
+
+.font-color-p1 {
   color: var(--p1);
 }
 
