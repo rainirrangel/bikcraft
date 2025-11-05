@@ -103,3 +103,26 @@
     display: none;
   }
 }
+
+@media (max-width: 600px) {
+  .tecnologia-conteudo h2 {
+    font-size: 3rem;
+    line-height: 1.125;
+  }
+
+  .tecnologia-conteudo > p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .tecnologia-conteudo a {
+    margin-bottom: 60px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  .tecnologia-lista h4 {
+    font-size: 1.25rem;
+  }
+}
