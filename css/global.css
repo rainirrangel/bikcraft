@@ -20,9 +20,6 @@
   --p3: #a66f00;
   --p4: #664400;
   --p5: #332200;
-  /* Tipografia */
-
-  /* Espaçamento */
 }
 
 * {
@@ -98,6 +95,14 @@ img[src$=".jpg"] {
   color: var(--p1);
 }
 
+.font-color-p4 {
+  color: var(--p4);
+}
+
+.font-color-p5 {
+  color: var(--p5);
+}
+
 .btn {
   display: inline-block;
   padding: 16px 32px;
@@ -123,6 +128,7 @@ img[src$=".jpg"] {
   text-transform: uppercase;
   font-size: 1.5rem;
   line-height: 1.5;
+  transition: 0.3s;
 }
 
 .link::after {

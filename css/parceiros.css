@@ -65,4 +65,8 @@
     line-height: 1.125;
     margin-bottom: 40px;
   }
+
+  .parceiros-lista li {
+    padding: 20px;
+  }
 }
