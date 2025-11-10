@@ -95,6 +95,14 @@ img[src$=".jpg"] {
   color: var(--p1);
 }
 
+.font-color-p2 {
+  color: var(--p2);
+}
+
+.font-color-p3 {
+  color: var(--p3);
+}
+
 .font-color-p4 {
   color: var(--p4);
 }
@@ -112,6 +120,7 @@ img[src$=".jpg"] {
   font-size: 1.125rem;
   line-height: 1.33;
   font-weight: 600;
+  max-width: max-content;
 }
 
 .btn-p1 {
@@ -121,6 +130,15 @@ img[src$=".jpg"] {
 
 .btn-p1:hover {
   background: linear-gradient(var(--p1-1), var(--p2-1));
+}
+
+.btn-c10 {
+  background: var(--c10);
+  color: var(--c2);
+}
+
+.btn-c10:hover {
+  background: var(--c9);
 }
 
 .link {
