@@ -1,0 +1,137 @@
+.bicicletas {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bicicletas-img {
+  position: relative;
+}
+.bicicletas-img span {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  display: inline-block;
+  color: var(--c0);
+  background-color: var(--c12);
+  border-radius: 4px 0 0 4px;
+  padding: 8px 16px 8px 8px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.bicicletas-conteudo {
+  position: relative;
+}
+
+.bicicletas-conteudo h2::before {
+  content: "";
+  display: block;
+  background-color: var(--p1);
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bicicletas-conteudo::after {
+  content: "";
+  display: block;
+  height: 52px;
+  width: 52px;
+  position: absolute;
+  background-image: url(../img/dec/top-right.svg);
+  top: 0;
+  right: 20px;
+}
+
+.bicicletas-conteudo h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.bicicletas-conteudo p {
+  font-size: 1.125rem;
+  line-height: 1.33;
+  color: var(--c8);
+  max-width: 450px;
+  margin-bottom: 32px;
+}
+
+.bicicletas-conteudo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.bicicletas-conteudo li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--c8);
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+
+.bicicletas-conteudo img {
+  width: 24px;
+}
+
+.bicicletas-conteudo a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--c0) 30%, var(--c11) 0%);
+}
+
+.bicicletas-bg h2 {
+  color: var(--c0);
+}
+
+.bicicletas-bg p,
+.bicicletas-bg li {
+  color: var(--c5);
+}
+
+@media (max-width: 800px) {
+  .bicicletas {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .bicicletas-bg {
+    background: var(--c11);
+  }
+}
+
+@media (max-width: 500px) {
+  .bicicletas-conteudo ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 52px;
+  }
+
+  .bicicletas-conteudo li {
+    font-size: 1rem;
+  }
+
+  .bicicletas-conteudo a {
+    right: initial;
+    left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicletas-conteudo::after {
+    display: none;
+  }
+}

@@ -141,6 +141,19 @@ img[src$=".jpg"] {
   background: var(--c9);
 }
 
+.btn.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  background: url(../img/icones/seta.svg);
+  transition: transform 0.2s;
+}
+
+.btn.seta:hover::after {
+  transform: translateX(4px);
+}
+
 .link {
   display: inline-block;
   text-transform: uppercase;
@@ -166,6 +179,21 @@ img[src$=".jpg"] {
   background-color: var(--c11);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.titulo {
+  position: relative;
+}
+
+.titulo::after {
+  content: "";
+  display: block;
+  height: 52px;
+  width: 52px;
+  position: absolute;
+  background-image: url(../img/dec/top-right.svg);
+  top: 0;
+  right: 20px;
 }
 
 .titulo p {
@@ -206,5 +234,11 @@ img[src$=".jpg"] {
 
   .titulo h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo::after {
+    display: none;
   }
 }
