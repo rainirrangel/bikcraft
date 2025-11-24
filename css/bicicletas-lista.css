@@ -1,5 +1,6 @@
 .bicicletas-lista {
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .bicicletas-lista h2 {
@@ -57,9 +58,19 @@
 }
 
 @media (max-width: 800px) {
+  .bicicletas-lista {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .bicicletas-lista-itens {
     gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .bicicletas-lista h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
   }
 }

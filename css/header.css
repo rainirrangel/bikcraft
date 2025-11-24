@@ -75,3 +75,9 @@
     font-size: 0.875rem;
   }
 }
+
+@media (max-width: 500px) {
+  .header {
+    justify-content: center;
+  }
+}
