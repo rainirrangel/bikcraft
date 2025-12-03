@@ -13,6 +13,7 @@
   --c10: #2e2e2e;
   --c11: #111111;
   --c12: #000000;
+  --p0: #ffeeaa;
   --p1: #ffbb00;
   --p1-1: #ffb60d;
   --p2: #e4a30b;
@@ -29,11 +30,16 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: var(--c11);
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  border: none;
 }
 
 span {
@@ -121,6 +127,7 @@ img[src$=".jpg"] {
   line-height: 1.33;
   font-weight: 600;
   max-width: max-content;
+  cursor: pointer;
 }
 
 .btn-p1 {

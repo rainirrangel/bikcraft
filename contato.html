@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
     <title>Contato | Bikcraft</title>
   </head>
-  <body>
+  <body id="contato">
     <header class="header-bg">
       <div class="container header">
         <a href="./">
@@ -41,7 +41,145 @@
           </h1>
         </div>
       </div>
+      <div class="contato-bg">
+        <div class="container contato">
+          <section class="contato-dados" aria-label="Endereço">
+            <h2>Loja Online</h2>
+            <div class="font2-400 contato-endereco">
+              <p>Rua Ali Perto, 35</p>
+              <p>Rio de Janeiro - RJ</p>
+              <p>Brasil - Terra - Via Láctea</p>
+            </div>
+            <address class="contato-meios">
+              <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+              <a href="mailto:assistencia@bikcraft.com"
+                >assistencia@bikcraft.com</a
+              >
+              <a href="tel:+5521999999999">+55 (21) 99999-9999</a>
+            </address>
+            <ul class="contato-redes">
+              <li>
+                <a href="./"
+                  ><img src="./img/redes/instagram-p.svg" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="./"
+                  ><img src="./img/redes/facebook-p.svg" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="./"
+                  ><img src="./img/redes/youtube-p.svg" alt="Youtube"
+                /></a>
+              </li>
+            </ul>
+          </section>
+          <section class="contato-formulario" aria-label="Formulário">
+            <form class="grid-2c form" action="./contato.html">
+              <div>
+                <label for="nome">Nome</label>
+                <input
+                  class="font2-400"
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Seu nome"
+                />
+              </div>
+              <div>
+                <label for="telefone">Telefone</label>
+                <input
+                  class="font2-400"
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(21) 99999-9999"
+                />
+              </div>
+              <div class="col-2">
+                <label for="email">E-mail</label>
+                <input
+                  class="font2-400"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="contato@email.com"
+                />
+              </div>
+              <div class="col-2">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  class="font2-400"
+                  rows="5"
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="O que você precisa?"
+                ></textarea>
+              </div>
+              <button class="btn btn-p1 col-2">Enviar mensagem</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
+
+    <article class="container grid-2c lojas">
+      <h2 class="font1-600">
+        lojas locais<span class="font-color-p1">.</span>
+      </h2>
+      <div class="lojas-item">
+        <img
+          src="./img/lojas/rj.jpg"
+          alt="mapa marcando o endereço em Rua Ali Perto, 25 - Rio de Janeiro - RJ"
+        />
+        <div class="lojas-item-conteudo">
+          <h3 class="font1-600">Rio de Janeiro</h3>
+          <div class="lojas-dados">
+            <p class="font2-400">Rua Ali Perto, 25</p>
+            <p class="font2-400">Rio de Janeiro - RJ</p>
+          </div>
+          <div class="lojas-dados">
+            <a class="font2-400" href="mailto:rj@bikcraft.com"
+              >rj@bikcraft.com</a
+            >
+            <a class="font2-400" href="tel:+5521999999999"
+              >+55 (21) 99999-9999</a
+            >
+          </div>
+          <p class="lojas-horario font1-600">
+            <img src="./img/icones/horario.svg" alt="" />
+            08-18h de segunda à domingo
+          </p>
+        </div>
+      </div>
+
+      <div class="lojas-item">
+        <img
+          src="./img/lojas/sp.jpg"
+          alt="mapa marcando o endereço em Rua Ali do Lado, 26 - São Paulo - SP"
+        />
+        <div class="lojas-item-conteudo">
+          <h3 class="font1-600">São Paulo</h3>
+          <div class="lojas-dados">
+            <p class="font2-400">Rua Ali do Lado, 26</p>
+            <p class="font2-400">São Paulo - SP</p>
+          </div>
+          <div class="lojas-dados">
+            <a class="font2-400" href="mailto:sp@bikcraft.com"
+              >sp@bikcraft.com</a
+            >
+            <a class="font2-400" href="tel:+5511999999999"
+              >+55 (11) 99999-9999</a
+            >
+          </div>
+          <p class="lojas-horario font1-600">
+            <img src="./img/icones/horario.svg" alt="" />
+            08-18h de segunda à domingo
+          </p>
+        </div>
+      </div>
+    </article>
     <footer class="footer-bg">
       <div class="container footer">
         <div class="footer-conteudo">

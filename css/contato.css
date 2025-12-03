@@ -1,0 +1,113 @@
+#contato {
+  background-color: var(--c1);
+}
+
+.contato-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0 -260px var(--c1);
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.contato {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, var(--c12) 40%, var(--c0) 30%);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 40px;
+  padding: 60px;
+}
+
+.contato h2 {
+  color: var(--c0);
+  margin-bottom: 60px;
+}
+
+.contato-endereco {
+  background: url(../img/icones/local.svg) no-repeat 0 2px;
+  margin-bottom: 32px;
+}
+
+.contato-endereco p {
+  color: var(--c5);
+  margin-bottom: 8px;
+  padding-left: 28px;
+}
+
+.contato-meios a {
+  color: var(--c5);
+  display: block;
+  max-width: max-content;
+  margin-bottom: 8px;
+  padding-left: 28px;
+  transition: 0.3s;
+}
+
+.contato-meios a:hover {
+  color: var(--c0);
+  text-decoration: underline;
+}
+
+.contato-meios a:first-child {
+  background: url(../img/icones/email.svg) no-repeat 0 2px;
+}
+
+.contato-meios a:last-child {
+  background: url(../img/icones/telefone.svg) no-repeat 0 2px;
+  margin-top: 32px;
+  margin-bottom: 60px;
+}
+
+.contato-redes {
+  display: flex;
+  gap: 32px;
+  padding-left: 28px;
+}
+
+.contato-redes li:first-child:hover img {
+  content: url(../img/redes/instagram.svg);
+}
+
+.contato-redes li:nth-child(2):hover img {
+  content: url(../img/redes/facebook.svg);
+}
+
+.contato-redes li:nth-child(3):hover img {
+  content: url(../img/redes/youtube.svg);
+}
+
+.contato-dados,
+.contato-formulario {
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .contato-dados {
+    background-color: var(--c12);
+    padding: 32px;
+  }
+
+  .contato-formulario {
+    background-color: var(--c0);
+    padding: 32px;
+  }
+
+  .contato {
+    background: linear-gradient(var(--c12) 40%, var(--c0) 30%);
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contato h2 {
+    margin-bottom: 32px;
+  }
+
+  .contato-meios a:last-child {
+    margin-bottom: 32px;
+  }
+
+  .contato-redes {
+    margin-bottom: 12px;
+  }
+}
