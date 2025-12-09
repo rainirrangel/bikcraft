@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
     <title>Orçamento | Bikcraft</title>
   </head>
-  <body>
+  <body id="orcamento">
     <header class="header-bg">
       <div class="container header">
         <a href="./">
@@ -41,6 +41,202 @@
           </h1>
         </div>
       </div>
+      <form class="container orcamento" action="./">
+        <div class="orcamento-produto grid-2c">
+          <h2 class="font1-600">Bikcraft ou Seguro?</h2>
+
+          <input type="radio" name="tipo" value="bikcraft" id="bikcraft" />
+          <label for="bikcraft">Bikcraft</label>
+
+          <input type="radio" name="tipo" value="seguro" id="seguro" />
+          <label for="seguro">Seguro</label>
+
+          <div class="orcamento-conteudo" id="orcamento-bikcraft">
+            <h2 class="font1-600">Escolha a sua:</h2>
+
+            <input type="radio" name="produto" value="nimbus" id="nimbus" />
+            <label for="nimbus">Nimbus Stark <span>R$ 4999</span></label>
+            <div class="orcamento-detalhes">
+              <ul>
+                <li>
+                  <img src="./img/icones/eletrica.svg" alt="" /> Motor elétrico
+                </li>
+                <li>
+                  <img src="./img/icones/carbono.svg" alt="" /> Fibra de carbono
+                </li>
+                <li>
+                  <img src="./img/icones/velocidade.svg" alt="" /> 50 km/h
+                </li>
+                <li>
+                  <img src="./img/icones/rastreador.svg" alt="" /> Rastreador
+                </li>
+              </ul>
+              <img
+                src="./img/bicicletas/nimbus.jpg"
+                alt="Bicicleta elétrica preta"
+              />
+            </div>
+            <input type="radio" name="produto" value="magic" id="magic" />
+            <label for="magic">Magic Might <span>R$ 2499</span></label>
+            <div class="orcamento-detalhes">
+              <ul>
+                <li>
+                  <img src="./img/icones/eletrica.svg" alt="" /> Motor elétrico
+                </li>
+                <li>
+                  <img src="./img/icones/carbono.svg" alt="" /> Fibra de carbono
+                </li>
+                <li>
+                  <img src="./img/icones/velocidade.svg" alt="" /> 45 km/h
+                </li>
+                <li>
+                  <img src="./img/icones/rastreador.svg" alt="" /> Rastreador
+                </li>
+              </ul>
+              <img
+                src="./img/bicicletas/magic.jpg"
+                alt="Bicicleta elétrica preta"
+              />
+            </div>
+            <input type="radio" name="produto" value="nebula" id="nebula" />
+            <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
+            <div class="orcamento-detalhes">
+              <ul>
+                <li>
+                  <img src="./img/icones/eletrica.svg" alt="" /> Motor elétrico
+                </li>
+                <li>
+                  <img src="./img/icones/carbono.svg" alt="" /> Fibra de carbono
+                </li>
+                <li>
+                  <img src="./img/icones/velocidade.svg" alt="" /> 40 km/h
+                </li>
+                <li>
+                  <img src="./img/icones/rastreador.svg" alt="" /> Rastreador
+                </li>
+              </ul>
+              <img
+                src="./img/bicicletas/nebula.jpg"
+                alt="Bicicleta elétrica cinza"
+              />
+            </div>
+          </div>
+
+          <div class="orcamento-conteudo" id="orcamento-seguro">
+            <h2 class="font1-600">Escolha o plano:</h2>
+
+            <input type="radio" name="seguro" value="prata" id="prata" />
+            <label for="prata"
+              >Prata
+              <span
+                >R$ 199<span class="mensal-preco">/mensal</span></span
+              ></label
+            >
+            <div class="orcamento-detalhes lista-seguro">
+              <ul>
+                <li>Duas torcas por ano</li>
+                <li>Assistência técnica</li>
+                <li>Suporte 08h às 18h</li>
+                <li>Cobertura estadual</li>
+              </ul>
+            </div>
+            <input type="radio" name="seguro" value="ouro" id="ouro" />
+            <label for="ouro"
+              >Ouro
+              <span
+                >R$ 299<span class="mensal-preco">/mensal</span></span
+              ></label
+            >
+            <div class="orcamento-detalhes lista-seguro">
+              <ul>
+                <li>Cinco torcas por ano</li>
+                <li>Assistência especial</li>
+                <li>Suporte 24h</li>
+                <li>Cobertura nacioanl</li>
+                <li>Desconto em parceiros</li>
+                <li>Acesso ao clube Bikcraft</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="orcamento-dados form grid-2c">
+          <h2 class="font1-600 col-2">Dados pessoais</h2>
+          <div>
+            <label for="nome">Nome</label>
+            <input class="font2-400" type="text" id="nome" name="nome" />
+          </div>
+          <div>
+            <label for="sobrenome">Sobrenome</label>
+            <input
+              class="font2-400"
+              type="text"
+              id="sobrenome"
+              name="sobrenome"
+            />
+          </div>
+          <div class="col-2">
+            <label for="cpf">CPF</label>
+            <input
+              class="font2-400"
+              type="text"
+              id="cpf"
+              name="cpf"
+              placeholder="000.000.000-00"
+            />
+          </div>
+          <div class="col-2">
+            <label for="email">Email</label>
+            <input class="font2-400" type="email" id="email" name="email" />
+          </div>
+          <h2 class="font1-600 col-2">Dados pessoais</h2>
+          <div>
+            <label for="cep">CEP</label>
+            <input
+              class="font2-400"
+              type="text"
+              id="cep"
+              name="cep"
+              placeholder="00000-000"
+            />
+          </div>
+          <div>
+            <label for="numero">Número</label>
+            <input class="font2-400" type="text" id="numero" name="numero" />
+          </div>
+          <div>
+            <label for="logradouro">Logradouro</label>
+            <input
+              class="font2-400"
+              type="text"
+              id="logradouro"
+              name="logradouro"
+              placeholder="Rua, avenida..."
+            />
+          </div>
+          <div>
+            <label for="bairro">Bairro</label>
+            <input class="font2-400" type="text" id="bairro" name="bairro" />
+          </div>
+          <div>
+            <label for="cidade">Cidade</label>
+            <input class="font2-400" type="text" id="cidade" name="cidade" />
+          </div>
+          <div>
+            <label for="estado">Estado</label>
+            <input class="font2-400" type="text" id="estado" name="estado" />
+          </div>
+          <div class="col-2 aceite">
+            <input type="checkbox" id="aceite" name="aceite" />
+            <label for="aceite"
+              >Li e aceito os
+              <a class="font1-600" href="./termos.html"
+                >termos e condições</a
+              ></label
+            >
+          </div>
+          <button class="btn btn-p1 col-2">Solicitar orçamento</button>
+        </div>
+      </form>
     </main>
     <footer class="footer-bg">
       <div class="container footer">

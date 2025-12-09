@@ -1,18 +1,36 @@
+/* Global */
 @import url(./global.css);
+
+/* Reutilizáveis */
+@import url(./footer.css);
 @import url(./header.css);
+@import url(./formulario.css);
+
+/* Home */
 @import url(./introducao.css);
 @import url(./bicicletas-lista.css);
 @import url(./tecnologia.css);
 @import url(./parceiros.css);
 @import url(./depoimento.css);
 @import url(./seguros.css);
-@import url(./footer.css);
+
+/* Termos */
 @import url(./termos.css);
+
+/* Bicicletas */
 @import url(./bicicletas.css);
 @import url(./vantagens.css);
 @import url(./perguntas.css);
+
+/* Bicicletas Interna */
 @import url(./bicicleta-detalhes.css);
+
+/* Seguro */
 @import url(./bicicleta-seguro.css);
+
+/* Contato */
 @import url(./contato.css);
-@import url(./formulario.css);
 @import url(./lojas.css);
+
+/* Orcamento */
+@import url(./orcamento.css);
