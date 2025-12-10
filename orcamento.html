@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
     <title>Orçamento | Bikcraft</title>
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body id="orcamento">
     <header class="header-bg">
@@ -125,7 +129,7 @@
           <div class="orcamento-conteudo" id="orcamento-seguro">
             <h2 class="font1-600">Escolha o plano:</h2>
 
-            <input type="radio" name="seguro" value="prata" id="prata" />
+            <input type="radio" name="produto" value="prata" id="prata" />
             <label for="prata"
               >Prata
               <span
@@ -140,7 +144,7 @@
                 <li>Cobertura estadual</li>
               </ul>
             </div>
-            <input type="radio" name="seguro" value="ouro" id="ouro" />
+            <input type="radio" name="produto" value="ouro" id="ouro" />
             <label for="ouro"
               >Ouro
               <span
@@ -295,5 +299,6 @@
         </p>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

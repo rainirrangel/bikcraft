@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
     <title>Bikcraft - Bicicletas Elétricas</title>
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body id="home">
     <header class="header-bg">
@@ -35,19 +39,26 @@
     <main class="introducao-bg">
       <div class="introducao container grid-2c">
         <div class="introducao-conteudo">
-          <h1 class="font1-600">
+          <h1 class="font1-600 fadeInLeft" data-anime="200">
             Bicicletas feitas sob medida<span class="font-color-p1">.</span>
           </h1>
-          <p class="font2-400">
+          <p class="font2-400 fadeInLeft" data-anime="400">
             Bicicletas elétricas de alta prcisão e qualidade, feitas sob medida
             para você. Explore o mundo na sua velocidade com a Bikcraft.
           </p>
-          <a class="btn btn-p1" href="./bicicletas.html">Escolha a sua</a>
+          <a
+            class="btn btn-p1 fadeInLeft"
+            href="./bicicletas.html"
+            data-anime="600"
+            >Escolha a sua</a
+          >
         </div>
         <div>
           <img
+            class="fadeInDown"
             src="./img/fotos/introducao.jpg"
             alt="Bicicleta elétrica preta"
+            data-anime="200"
           />
         </div>
       </div>
@@ -260,5 +271,7 @@
         </p>
       </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
